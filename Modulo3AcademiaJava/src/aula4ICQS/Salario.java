@@ -48,6 +48,4 @@ public class Salario {
 		this.funcao = funcao;
 	}
 	
-	
-
 }
