@@ -19,8 +19,9 @@ package aula4ICQS;
 public class Teste {
 	
 	public static void main(String[] args) {
-		
-		
+
+		// instanciei a class Salario
+		Salario salario = new Salario("christophe", 1000, "Developer");
 		
 	}
 
