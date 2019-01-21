@@ -19,12 +19,7 @@ package aula4ICQS;
 public class Teste {
 	
 	public static void main(String[] args) {
-<<<<<<< HEAD
 
-		// instanciei a class Salario
-=======
-		
->>>>>>> refs/remotes/origin/master
 		Salario salario = new Salario("christophe", 1000, "Developer");
 		
 	}
