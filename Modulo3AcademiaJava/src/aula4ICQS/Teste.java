@@ -14,12 +14,14 @@ package aula4ICQS;
  * Criar testes JUNIT para cada um dos 2 metodos "calcularSalarioMensal" e "calcularSalarioAnual"
  * Criar testes JUNIT para cada um dos diversos atributos
  * Fazer upload das classes para a plataforma GITHUB e enviar o link 
- * 
- * teste
  */
 
-public class Main {
+public class Teste {
 	
-	
+	public static void main(String[] args) {
+		
+		
+		
+	}
 
 }
