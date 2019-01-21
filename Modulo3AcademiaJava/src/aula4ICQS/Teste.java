@@ -20,7 +20,7 @@ public class Teste {
 	
 	public static void main(String[] args) {
 		
-		
+		Salario salario = new Salario("christophe", 1000, "Developer");
 		
 	}
 
