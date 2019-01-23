@@ -16,7 +16,7 @@ package aula4ICQS;
  * Fazer upload das classes para a plataforma GITHUB e enviar o link para o Antonio
  */
 
-public class Salario {
+public class Empregado {
 
 	private String nome;
 	private double salario;
@@ -38,7 +38,7 @@ public class Salario {
 		return salarioAnual;
 	}
 
-	public Salario(String nome, double salario, String funcao) {
+	public Empregado(String nome, double salario, String funcao) {
 		super();
 		this.nome = nome;
 		this.salario = salario;

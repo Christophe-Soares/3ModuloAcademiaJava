@@ -1,5 +1,9 @@
 package aula4ICQS;
 
+import org.junit.runner.JUnitCore;
+import org.junit.runner.Result;
+import org.junit.runner.notification.Failure;
+
 /*
  * Exercicio solicitado pelo Antonio na 4 aula de Integracao Continua e Qualidade de Software - 3º Modulo da Academia de Java.
  * Fazer um projecto utilizando a extensao .git
@@ -19,15 +23,29 @@ package aula4ICQS;
  */
 
 public class Teste {
-	
+
+	static Empregado emp = new Empregado("christophe", 1000, "Junior Developer");
+
 	public static void main(String[] args) {
 
-		Salario empregado1 = new Salario("christophe", 1000, "Junior Developer");
+		System.out.println("O salario mensal do " + emp.getNome() + " cuja funcao e " + emp.getFuncao() + " e de "
+				+ emp.calcularSalarioMensal());
+
+		System.out.println("O salario anual do " + emp.getNome() + " cuja funcao e " + emp.getFuncao() + " e de "
+				+ emp.calcularSalarioAnual());
 		
-		System.out.println("O salario mensal do " + empregado1.getNome() + " cuja funcao e " + empregado1.getFuncao() + " e de " + empregado1.calcularSalarioMensal());
+		System.out.println("################################################################################");
 		
-		System.out.println("O salario anual do " + empregado1.getNome() + " cuja funcao e " + empregado1.getFuncao() + " e de " + empregado1.calcularSalarioAnual());
-		
+		System.out.println("\nRelatório do JUNIT depois de completar os testes");
+
+		// teste Runner do Junit
+		Result result = JUnitCore.runClasses(ClasseTestesJunit.class);
+
+		for (Failure failure : result.getFailures()) {
+			System.out.println(failure.toString());
+		}
+
+		System.out.println(result.wasSuccessful());
 	}
 
 }
