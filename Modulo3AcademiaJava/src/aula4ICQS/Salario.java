@@ -13,41 +13,60 @@ package aula4ICQS;
  * A class Main vai instanciar varios Salarios e apresentar o respectivo salario mensal e o salario anual.
  * Criar testes JUNIT para cada um dos 2 metodos "calcularSalarioMensal" e "calcularSalarioAnual"
  * Criar testes JUNIT para cada um dos diversos atributos
- * Fazer upload das classes para a plataforma GITHUB e enviar o link 
- * 
- * TESTE
+ * Fazer upload das classes para a plataforma GITHUB e enviar o link para o Antonio
  */
 
 public class Salario {
-	
+
 	private String nome;
 	private double salario;
 	private String funcao;
-	
+
+	public double calcularSalarioMensal() {
+		double salarioMensal = getSalario();
+		if (salarioMensal > 3000) {
+			return salarioMensal *= 1.05;
+		} else if (salarioMensal > 1000 && salarioMensal <= 3000) {
+			return salarioMensal *= 1.15;
+		} else {
+			return salarioMensal *= 1.2;
+		}
+	}
+
+	public double calcularSalarioAnual() {
+		double salarioAnual = calcularSalarioMensal() * 14;
+		return salarioAnual;
+	}
+
 	public Salario(String nome, double salario, String funcao) {
 		super();
 		this.nome = nome;
 		this.salario = salario;
 		this.funcao = funcao;
 	}
-	
+
 	public String getNome() {
 		return nome;
 	}
+
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
+
 	public double getSalario() {
 		return salario;
 	}
+
 	public void setSalario(double salario) {
 		this.salario = salario;
 	}
+
 	public String getFuncao() {
 		return funcao;
 	}
+
 	public void setFuncao(String funcao) {
 		this.funcao = funcao;
 	}
-	
+
 }
