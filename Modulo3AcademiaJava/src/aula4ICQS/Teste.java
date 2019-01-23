@@ -20,6 +20,9 @@ import org.junit.runner.notification.Failure;
  * Fazer upload das classes para a plataforma GITHUB e enviar o link para o Antonio
  * 
  * Teste commit atraves do terminal
+ * 
+ * teste feito no branch teste e merge no master atraves do terminal git no eclipse
+ * teste branch novoSSSD
  */
 
 public class Teste {
